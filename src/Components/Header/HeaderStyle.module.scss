@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+$header-img: url("./headerbackground.jpg");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  padding: 50px;
+  color: white;
+  text-align: center;
+  box-shadow: black 1px 2px 10px;
+  span {
+    color: #6dac67;
+  }
+  //----
+  background: $header-img;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 25% 75%;
+
+  h1 {
+    font-family: "Orbitron", sans-serif;
+    display: inline;
+    margin-left: 15px;
+    font-weight: bolder;
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+
+  q {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+}

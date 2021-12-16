@@ -1,0 +1,35 @@
+.card-container {
+  margin-left: 25%;
+  img {
+    cursor: pointer;
+    box-shadow: black 0px 5px 15px;
+  }
+
+  .details {
+    //Author styling
+    h3 {
+      display: block;
+      font-size: medium;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      span {
+        margin-top: 10px;
+        display: block;
+        // margin-left: 50px;
+      }
+    }
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@include mediaSm {
+  .card-container {
+    margin-left: 5%;
+  }
+}

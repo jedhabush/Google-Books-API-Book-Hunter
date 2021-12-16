@@ -1,0 +1,82 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.no-results {
+  color: rgb(136, 35, 35);
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+
+  .no-results-sign {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(136, 35, 35);
+    font-weight: 500;
+    animation: blur 2s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+
+    @keyframes blur {
+      from {
+        text-shadow: 0px 0px 10px rgb(184, 102, 102), 0px 0px 10px #fff,
+          0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+          0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff;
+      }
+    }
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@include mediaSm {
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (min-width: 501px) and (max-width: 734px) {
+    @content;
+  }
+}
+
+@include mediaMd {
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 735px) and (max-width: 950px) {
+    @content;
+  }
+}
+
+@include mediaLg {
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}

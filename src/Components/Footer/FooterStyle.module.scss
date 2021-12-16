@@ -1,0 +1,57 @@
+.footer_style {
+  background-color: #80505c;
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  margin-top: 72px;
+  display: block;
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: lighter;
+  }
+
+  .name_style {
+    letter-spacing: 1px;
+    span {
+      color: #6dac67;
+    }
+  }
+  a {
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(199, 195, 195);
+    font-size: 0.8rem;
+  }
+}
+
+// Responsiveness
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@include mediaSm {
+  .footer_style {
+    h3 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.5rem;
+    }
+    a {
+      font-size: 0.5rem;
+    }
+  }
+}
