@@ -21,13 +21,16 @@ Additional features
 
 ## Challenges
 - Google book API is loaded with data, the challange was to retrieve the right information. the method Map() was my hero that aided me to get the correct information
-- Book description length. I had to find a way to crop the book description in a way that makes sense to the user by making sure that the description is not too long so it does not ruin the site style but short and comprehensible to the user. Stack overflow was my assistant to accomplish this task. In fact, stack overflow has been my assistant since day one. The solution was to user Map() and the magic method SubString() to define the retrieved string length.
+- Book description length. I had to find a way to crop the book description in a way that makes sense to the user by making sure that the description is not too long so it does not ruin the site style but also short and comprehensible to the user. Stack overflow was my assistant to accomplish this task. In fact, stack overflow has been my assistant since day one. The solution was to use Map() and the magic method SubString() to define the retrieved string length.
+- The footer glitch. I spent hours trying to figure out why the footer does not stick to the bottom of the page when there's no book results or when you first visit the site and I still could not figure it out. I suspect that there might be some style overlapping between components. I had to redesign the component sytles many times but to no avail.
+- Book preview modal. I had to think of a way to include book description with minimal clutter. This particualr feature was super challenging to implement. One out of many issues I faced was that the book description was not positoned properly within it's designated box. I suspect again it has something to do with components styles and the way I was attempting to pass the information through the components without creating a seperate modal component.
 
 ## Future Improvements
 - Enhance user interface and colours 
 - Enhance device responsiveness
 - Allow books to be added as favourite
 - Allow logins for user personal customizations
+- Fix the footer glitch
 
 
 
