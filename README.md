@@ -5,7 +5,9 @@ https://book-hunter-google-books-api.netlify.app/
 ![alt text](https://github.com/jedhabush/Google-Books-API-Book-Hunter/blob/main/bookAPI.png)
 
 # Google-Books-API-Book-Hunter
+This project was different. It was finally the time to play around with APIs. Although I had some prior experience with manipulating APIs requests, it was the first time implementing that using reactJs. I like to add my personal touch to every project I do from selecting my favourite colours to designing the user interface. The idea behind the project was to extract as much information as possible from the API. I managed to retrieve books, images, links, dates, titles and books preview.
 
+## Features and Remarks
 A website page that allows users to search for books.
 It includes the following:
  - Header section introducing the page.
@@ -17,7 +19,15 @@ Additional features
  - A modal appears with more book information, when a user clicks a book in the grid.
  - Back to top button to scroll back to the top of the page, makes it convenient to the user to navigate the site. 
 
+## Challenges
+- Google book API is loaded with data, the challange was to retrieve the right information. the method Map() was my hero that aided me to get the correct information
+- Book description length. I had to find a way to crop the book description in a way that makes sense to the user by making sure that the description is not too long so it does not ruin the site style but short and comprehensible to the user. Stack overflow was my assistant to accomplish this task. In fact, stack overflow has been my assistant since day one. The solution was to user Map() and the magic method SubString() to define the retrieved string length.
 
+## Future Improvements
+- Enhance user interface and colours 
+- Enhance device responsiveness
+- Allow books to be added as favourite
+- Allow logins for user personal customizations
 
 
 
