@@ -1,3 +1,6 @@
+# Live Version 
+https://book-hunter-google-books-api.netlify.app/
+
 # Google-Books-API-Book-Hunter
 
 A website page that allows users to search for books.
@@ -15,8 +18,6 @@ Additional features
 
 
 
-# Live Version 
-https://book-hunter-google-books-api.netlify.app/
 
 
 
