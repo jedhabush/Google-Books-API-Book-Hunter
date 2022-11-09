@@ -5,7 +5,7 @@ https://book-hunter-google-books-api.netlify.app/
 ![alt text](https://github.com/jedhabush/Google-Books-API-Book-Hunter/blob/main/bookAPI.png)
 
 # Google-Books-API-Book-Hunter
-This project was different. It was finally the time to play around with APIs. Although I had some prior experience with manipulating APIs requests, it was the first time implementing that using reactJs. I like to add my personal touch to every project I do from selecting my favourite colours to designing the user interface. The idea behind the project was to extract as much information as possible from the API. I managed to retrieve books, images, links, dates, titles and books preview.
+This project was different. It was finally the time to play around with APIs. Although I had some prior experience with manipulating APIs requests, it was the first time implementing that using reactJs. I like to add my personal touch to every project I do from selecting my favourite colours to designing the user interface. The idea behind the project was to extract as much information as possible from the API. I managed to retrieve books, images, links, dates, titles and books descriptions.
 
 ## Features and Remarks
 A website page that allows users to search for books.
@@ -23,7 +23,7 @@ Additional features
 - Google book API is loaded with data, the challange was to retrieve the right information. the method Map() was my hero that aided me to get the correct information
 - Book description length. I had to find a way to crop the book description in a way that makes sense to the user by making sure that the description is not too long so it does not ruin the site style but also short and comprehensible to the user. Stack overflow was my assistant to accomplish this task. In fact, stack overflow has been my assistant since day one. The solution was to use Map() and the magic method SubString() to define the retrieved string length.
 - The footer glitch. I spent hours trying to figure out why the footer does not stick to the bottom of the page when there's no book results or when you first visit the site and I still could not figure it out. I suspect that there might be some style overlapping between components. I had to redesign the component sytles many times but to no avail.
-- Book preview modal. I had to think of a way to include book description with minimal clutter. This particualr feature was super challenging to implement. One out of many issues I faced was that the book description was not positoned properly within it's designated box. I suspect again it has something to do with components styles and the way I was attempting to pass the information through the components without creating a seperate modal component.
+- Book preview modal. I had to think of a way to include book description with minimal clutter. This particular feature was super challenging to implement. One out of many issues I faced was that the book description was not positoned properly within it's designated box. I again suspected it had something to do with components styles and the way I was attempting to pass the information through the components without creating a seperate preview modal component. I eneded up creating a seperate preview modal component and ensured that I was passing the right data through it.
 
 ## Future Improvements
 - Enhance user interface and colours 
